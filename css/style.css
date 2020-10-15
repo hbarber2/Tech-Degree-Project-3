@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	text-decoration: none;
 	background-color: whitesmoke;
-	color: darkslategray;
+	color: black;
 }
 
 header,
@@ -20,7 +20,7 @@ footer {
 }
 
 h1 {
-	background-color: darkslategray;
+	background-color: #1F0AA1;
 	color: white;
 	padding: 25px 0;
 	display: block;
@@ -34,6 +34,15 @@ legend,
 button {
 	font-size: 1.5em;
 }
+
+main .upper-section {
+	background-color: #F7F7FA;
+}
+
+h2{
+	background-image: linear-gradient(white 60%, #9989FF 40%);
+}
+
 
 h1,
 h2,
@@ -65,7 +74,7 @@ label{
 
 hr {
 	width: 90%;
-	border-top: 3px solid black;
+	border-top: 3px solid #1F0AA1;
 }
 
 .upper-section input,
@@ -75,6 +84,8 @@ textarea {
 	border-style: none;
 	width: 100%;
 	margin: 10px 0;
+	transition-duration: .5s;
+	box-shadow: 5px 5px 10px rgba(175, 121, 161, .05) inset;
 }
 
 input,
@@ -95,13 +106,14 @@ textarea {
 	
 }
 
+
 footer {
 	margin: 25px;
 	font-style: italic;
 }
 
 button {
-	background-color: mediumaquamarine;
+	background-color: #1F0AA1;
 	font-family: 'Merriweather', serif;
 	color: white;
 	border-style: none;
@@ -120,6 +132,7 @@ input::placeholder {
 	text-align: right;
 	font-family: 'Merriweather', serif;
 	font-style: italic;
+	text-transform: lowercase;
 }
 
 input:focus, 
@@ -141,10 +154,11 @@ textarea:focus {
 	
 }
 
-.upper-section {
+.upper-section-flex {
 	display: flex;
 	flex-direction: column;
 }
+ 
 
 .low-section {
 	display: inline-block;
@@ -152,7 +166,11 @@ textarea:focus {
 
 .heading {
 	padding: 2em 0;
+
 }
+
+
+
 
 .select-menu {
 	font-family: 'Merriweather'; 
@@ -160,7 +178,7 @@ textarea:focus {
 }
 
 .thick {
-	border-top: 7px solid black;
+	border-top: 7px solid #1F0AA1;
 }
 
 
@@ -192,18 +210,23 @@ textarea:focus {
 	}
 	
 	.upper-section label {
-		flex: 1 35%;
+		flex-basis:	25%;
 	}
 	
 	fieldset .upper-section input,
 	fieldset .upper-section select {
-		flex: 1 65%;
+		flex-grow: 1;
+		flex-basis: 75%;
 	}
 	
 	#zip {
-
-		max-width: 33%;
-
+		width: 33%;
+		position: relative;
+		right: -20%;
+	}
+	
+	label[for="zip"] {
+		position: absolute;
 	}
 	
 }
