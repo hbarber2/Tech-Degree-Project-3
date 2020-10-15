@@ -1,0 +1,215 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	margin: 0;
+	text-decoration: none;
+	background-color: whitesmoke;
+	color: darkslategray;
+}
+
+header,
+.heading,
+form,
+footer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	background-color: darkslategray;
+	color: white;
+	padding: 25px 0;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+legend,
+button {
+	font-size: 1.5em;
+}
+
+h1,
+h2,
+p {
+	text-align: center;
+}
+
+label,
+p,
+option,
+footer{
+	color: lightslategray;
+}
+
+p {
+	padding: 0 25px;
+}
+
+legend {
+	font-weight: 700;
+	padding: 30px 0;
+}
+
+label{
+
+	text-align: left;
+	padding: 10px 0;
+}
+
+hr {
+	width: 90%;
+	border-top: 3px solid black;
+}
+
+.upper-section input,
+select,
+textarea {
+	background-color: whitesmoke;
+	border-style: none;
+	width: 100%;
+	margin: 10px 0;
+}
+
+input,
+select {
+	padding: 20px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+fieldset {
+	border-style: none;
+	display: inline-block;
+	width: 100%;
+}
+
+textarea {
+	min-height: 10rem;
+	
+}
+
+footer {
+	margin: 25px;
+	font-style: italic;
+}
+
+button {
+	background-color: mediumaquamarine;
+	font-family: 'Merriweather', serif;
+	color: white;
+	border-style: none;
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin: 20px 0;
+	border-radius: 5px;
+}
+
+
+
+/************ Classes ***********/
+
+input::placeholder {
+	text-align: right;
+	font-family: 'Merriweather', serif;
+	font-style: italic;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  background-color: floralwhite;
+}
+
+
+#zip{
+    width: 50%;
+}
+
+.wrapper {
+	background-color: white;
+	margin: 0 auto;
+	width: 80%;
+	padding-bottom: 10rem;
+	
+}
+
+.upper-section {
+	display: flex;
+	flex-direction: column;
+}
+
+.low-section {
+	display: inline-block;
+}
+
+.heading {
+	padding: 2em 0;
+}
+
+.select-menu {
+	font-family: 'Merriweather'; 
+	color: lightslategray;
+}
+
+.thick {
+	border-top: 7px solid black;
+}
+
+
+.low-section label {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+/************ Media Query **************/
+
+@media (min-width: 768px) {
+	
+	
+	main {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 15%;
+	}
+	
+	hr {
+		width: 100%;
+	}
+	
+	fieldset .upper-section-flex {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 10px 0;
+	}
+	
+	.upper-section label {
+		flex: 1 35%;
+	}
+	
+	fieldset .upper-section input,
+	fieldset .upper-section select {
+		flex: 1 65%;
+	}
+	
+	#zip {
+
+		max-width: 50%;
+
+	}
+	
+}
+
+
+
+
+
+
