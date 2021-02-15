@@ -28,6 +28,7 @@ h1 {
 	margin: 0 auto;
 }
 
+
 h1,
 h2,
 legend,
@@ -36,7 +37,7 @@ button {
 }
 
 main .upper-section {
-	background-color: #F7F7FA;
+	background-color: white;
 }
 
 h2{
